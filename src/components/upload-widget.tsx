@@ -18,7 +18,6 @@ export function UploadWidget() {
         animate={isWidgetOpen ? 'open' : 'closed'}
         variants={{
           closed: {
-            width: 'max-content', // TODO: check why is not returning to max-content when closed
             height: 44,
             transition: {
               type: 'inertia',
