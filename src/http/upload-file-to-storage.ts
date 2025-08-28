@@ -18,7 +18,7 @@ export async function uploadFileToStorage(
   data.append('file', file)
 
   const response = await axios.post<{ url: string }>(
-    'http://localhost:3333/uploads',
+    'http://lb-gabs-1077273955.us-east-2.elb.amazonaws.com/uploads',
     data,
     {
       headers: {
